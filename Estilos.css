@@ -1,0 +1,556 @@
+/* Index */
+body {
+    background-color: #063573; /* Cambia el color de fondo a azul marino */
+    margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+}
+
+.logo img {
+    width: 10vw; /* Esto hará que el logo tenga un ancho del 10% del ancho del viewport */
+    height: 10; /* Esto mantendrá la proporción de la imagen */
+}
+        
+/* Estilos para la barra de navegación */
+.topnav {
+    background-color: white; /* Cambia el color de fondo a blanco */
+    overflow: hidden;
+    height: 80px; /* Aumenta la altura de la barra de navegación */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+        
+.topnav a {
+    color: #063573; /* Cambia el color del texto a azul marino */
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold; /* Hace el texto en negrita */
+    padding: 30px 5px; /* Aumenta el espacio vertical y mantiene el espacio horizontal */
+}
+
+.topnav .logo {
+    padding: 12px 0px; /* Ajusta el espacio alrededor del logo */
+}
+
+.topnav .button {
+    background-color: #063573; /* Cambia el color de fondo del botón a azul */
+    color: rgb(255, 255, 255); /* Cambia el color del texto a blanco */
+    border: none;
+    border-radius: 30px; /* Hace el botón redondeado */
+    padding: 20px 100px; /* Aumenta el espacio alrededor del botón */
+    margin-top: 10px; /* Centra verticalmente el botón */
+    margin-right: 120px; /* Agrega un margen derecho para mover el botón hacia la derecha */
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr)); /* Esto creará tantas columnas como sea posible mientras mantiene cada tarjeta entre 200px y 1fr de ancho */
+    grid-template-rows: repeat(3, 1fr); /* Define tres filas de igual tamaño */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px; /* Espacio alrededor del contenedor de tarjetas */
+}
+        
+.card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la tarjeta 2 */
+#card2 {
+    grid-column: 2/3; 
+    grid-row: 1/auto; 
+}
+        
+/* Estilo para la tarjeta 3 */
+#card3 {
+    background-color: rgba(255, 255, 255, 0);
+    grid-column: 2/2; 
+    grid-row: 2/auto;
+    margin: auto;
+}
+
+.image-button3 {
+    border: none;  /* Elimina el borde del botón */
+    background: transparent;  /* Hace que el fondo del botón sea transparente */
+    position: relative;  /* Establece la posición relativa para el botón, lo que permite posicionar absolutamente el texto dentro de él */
+    padding: 0;  /* Elimina el relleno del botón */
+    cursor: pointer;  /* Cambia el cursor a una mano para indicar que es interactivo */
+}
+        
+.card3 {
+    width: 25vw; /* Esto hará que el logo tenga un ancho del 25% del ancho del viewport */
+    display: block;  /* Hace que la imagen sea un bloque para eliminar el espacio blanco debajo de ella */
+}
+        
+.image-text3 {
+    position: absolute;  /* Posiciona el texto de manera absoluta dentro del botón */
+    top: 50%;  /* Centra verticalmente el texto */
+    left: 50%;  /* Centra horizontalmente el texto */
+    transform: translate(-50%, -50%);  /* Ajusta la posición del texto para asegurar el centrado */
+    color: rgb(0, 0, 0);  /* Cambia el color del texto a blanco */
+    font-weight: bold;  /* Hace que el texto sea negrita */
+}
+        
+    
+/* Estilo para la tarjeta 4 */
+#card4 {
+    grid-column: 3/6; 
+    grid-row: 1/1; 
+    text-align: center; 
+    padding: 10px; /* Espacio alrededor del contenedor de tarjetas */
+    height: auto; /* La altura se ajustará basándose en el contenido */
+    max-height: 200px; /* Establece una altura máxima para la tarjeta */
+}
+
+        
+.orange-line {
+    border: 2px solid orange; /* Ajusta el ancho y el color según tus preferencias */
+    width: auto; /* Ajusta el ancho de la línea */
+    margin: 0 auto; /* Centra la línea horizontalmente */
+}
+    
+  /* Estilo para la tarjeta 5 */
+#card5 {
+    grid-column: 6/2; 
+    grid-row: 1/3; 
+    margin: auto;
+    height: auto; /* La altura se ajustará basándose en el contenido */
+    width: auto; /* Establece una altura máxima para*/
+    max-width: 350px; /* Establece una altura máxima*/
+    max-height: 600px; /* Establece una altura máxima para la tarjeta */
+}
+
+    /* Estilo para el título */
+#card5 h3 {
+    text-align: center;  /* Centra el texto horizontalmente */
+    width: 100%;  /* Ajusta el ancho al 100% del contenedor */
+    margin: 0;  /* Elimina los márgenes predeterminados */
+}
+
+/* Estilo para el contenedor del título e imagen */
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;  /* Ajusta la altura al 100% del contenedor de la tarjeta */
+}
+
+/* Estilo para el botón que envuelve la imagen */
+.image-button5 {
+    border: none;  /* Elimina el borde del botón */
+    background: transparent;  /* Hace que el fondo del botón sea transparente */
+    padding: 0;  /* Elimina el relleno del botón */
+    cursor: pointer;  /* Cambia el cursor a una mano para indicar que es interactivo */
+}
+
+/* Estilo para la imagen dentro del botón */
+.image5 {
+    width: 15vw; /* Esto hará que el logo tenga un ancho del 15% del ancho del viewport */
+    display: block;  /* Hace que la imagen sea un bloque para eliminar el espacio blanco debajo de ella */
+}
+
+/* Estilo para la tarjeta 6 */
+#card6 {
+    background-color: rgba(255, 255, 255, 0);
+    grid-column: 5/5; 
+    grid-row: 1/3; 
+    margin: auto;
+}
+
+/* Estilo para la tarjeta 7 y 8 */
+#card7 {
+    grid-column: 1/2; /* Ocupa la primera columna */
+    grid-row: 1/20; /* Ocupa ambas filas, haciéndola más alargada */
+    background-color: #fafafa; /* Fondo blanco */
+
+    display: flex; /* Utiliza Flexbox */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    text-align: center; /* Asegura que el texto esté centrado */
+    padding-top: 10px; /* Esto agregará un margen en la parte superior dentro del contenedor de la tarjeta */
+}
+
+#card8 {
+    grid-column: 2/3; /* Ocupa la primera columna */
+    grid-row: 1/20; /* Ocupa ambas filas, haciéndola más alargada */
+    background-color: orange;
+    
+    display: flex; /* Utiliza Flexbox */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    text-align: center; /* Asegura que el texto esté centrado */    
+    padding-top: 10px; /* Esto agregará un margen en la parte superior dentro del contenedor de la tarjeta */
+} 
+
+.card7, .card8 {
+    width:  40vw; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina espacios extra debajo de la imagen */
+}
+
+.image-button7, .image-button8 {
+    width: 100%; /* Asegura que el botón se expanda al ancho completo de su contenedor */
+    display: flex; /* Establece el botón como un contenedor flex */
+    justify-content: center; /* Centra la imagen horizontalmente dentro del botón */
+    background: transparent; /* Asegura que el fondo del botón sea transparente */
+    border: none; /* Elimina el borde del botón */
+    overflow: hidden; /* Esto evitará que cualquier parte del botón se desborde fuera de su contenedor */
+    margin: 0; /* Elimina cualquier margen que el botón pueda tener */
+    padding: 0; /* Elimina cualquier relleno que el botón pueda tener */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima */
+}
+
+.image-text7, .image-text8 {
+    font-size: 18px; /* Tamaño de fuente deseado */
+    margin-top: 10px; /* Espacio encima del texto */
+    font-family: 'Arial', sans-serif; /* Elige la fuente que quieras, aquí es solo un ejemplo */
+    color: #000; /* Cambia el color del texto a negro */
+    font-weight: bold; /* Hace que el texto sea negrita */    width: 100%; /* Asegura que el texto se expanda al ancho completo de su contenedor */
+    order: 1; /* Asegura que el texto venga después de la imagen */
+    margin-top: 10px; /* Espacio encima del texto */
+}
+
+
+
+/* Media query para pantallas de hasta 768px de ancho (Tabletas y celulares en modo horizontal) */
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 15vw; /* Ejemplo de ajuste para el logo */
+    }
+
+    .topnav .button {
+        padding: 15px 50px; /* Ejemplo de ajuste para el botón en la barra de navegación */
+    }
+
+    .card-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ejemplo de ajuste para las tarjetas */
+    }
+
+    .card3 {
+        width: 90%; /* Ejemplo de ajuste para la tarjeta 3 */
+    }
+
+    .image5 {
+        width: 20vw; /* Ejemplo de ajuste para la imagen del botón */
+    }
+}
+
+/* Media query para pantallas de dispositivos móviles */
+@media screen and (max-width: 768px) {
+    /* Ajustes para el logo */
+    .logo img {
+        width: 80px; /* Tamaño del logo */
+    }
+
+    /* Ajustes para la barra de navegación */
+    .topnav .button {
+        padding: 10px 20px; /* Ajustes de espaciado para el botón */
+        font-size: 14px; /* Tamaño de fuente para el botón */
+    }
+
+    /* Ajustes para las tarjetas */
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: calc(50% - 10px); /* Dos tarjetas por fila con espacio entre ellas */
+        margin-bottom: 20px; /* Espacio entre las tarjetas */
+    }
+
+    /* Ejemplo de ajuste para la tarjeta 3 */
+    .card3 {
+        width: 100%; /* Una tarjeta por fila */
+    }
+
+    /* Ejemplo de ajuste para la imagen del botón */
+    .image5 {
+        width: 100px; /* Tamaño de la imagen del botón */
+    }
+
+    /* Ajuste para que todas las tarjetas tengan el mismo tamaño */
+    .card {
+        width: 100%; /* Todas las tarjetas ocupan el 100% del ancho disponible */
+        margin-bottom: 20px; /* Espacio entre las tarjetas */
+    }
+}
+
+/*Login*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .bg-light {
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%; /* Puedes ajustar el ancho según tus necesidades */
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .card-header {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .card-body {
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .btn-primary {
+    color: white;
+    background-color: #0056b3;
+    border-color: #0056b3;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .btn-link {
+    color: #0056b3;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .btn-link:hover {
+    text-decoration: underline;
+  }
+  
+  .alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  .alert-danger {
+    background-color: #f44336;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #ffff;
+  }
+  
+  .logo {
+    padding: 14px 16px;
+  }
+  
+  .logo img {
+    vertical-align: middle;
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+/*Calendario*/
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+.calendario body {
+    background: #fad390;
+    font-family: 'Questrial', sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calendario .calendar {
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+    background: #F2B035;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 40px 30px -20px rgba(0,0,0,0.3);
+}
+
+.calendario .calendar .month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.calendario .calendar .month .year {
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.calendario .calendar .month .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #0a3d62;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    transition-duration: .2s;
+    position: relative;
+}
+
+.calendario .calendar .month .nav:hover {
+    background: #eee;
+}
+
+.calendario .calendar .days {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    color: #A066F2;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.calendario .calendar .days span {
+    width: 50px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.calendario .calendar .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendario .calendar .dates button {
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    justify-self: center;
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 2px;
+    transition-duration: .2s;
+}
+
+.calendario .calendar .dates button.today {
+    box-shadow: inset 0px 0px 0px 2px #0a3d62;
+}
+
+.calendario .calendar .dates button:first-child {
+    grid-column: 3;
+}
+
+.calendario .calendar .dates button:hover {
+    background: #eee;
+}
+
+.calendario .calendar .dates button:focus {
+    background: #0a3d62;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Actividades academicas */
+
+#categories button {
+margin: 5px;
+}
+
+#tareas-view, #proyectos-view, #examenes-view {
+    color: rgb(255, 255, 255);
+}    
+
+/* Estilos para el contenedor de la vista y las columnas */
+.view-container {
+    display: flex; /* Alineación horizontal */
+}
+    
+.column {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+}
+    .task {
+        margin: 5px 0;
+    }
+.view {
+    display: none;
+}
+
+/* Estilo para el botón de nueva tarea */
+.new-activity-button {
+    margin-bottom: 20px; /* Margen debajo del botón */
+}
+
+/* Estilo para el tooltip */
+.actividad-tooltip {
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Cambiar el cursor al pasar sobre una actividad */
+.actividad {
+    cursor: pointer;
+    position: relative;
+}
+
+/* Mostrar el tooltip cuando se pasa sobre una actividad */
+.actividad:hover .actividad-tooltip {
+    display: block;
+}   
